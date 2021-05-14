@@ -48,7 +48,7 @@ export default {
 
     // 1.axios 全局配置
     axios.defaults.timeout = 1000
-    axios.delete.baseURL = 'http://localhost:8080'
+    axios.defaults.baseURL = 'http://localhost:8080'
     // 2.实例配置
     let instance = axios.create({
         //使用默认配置
