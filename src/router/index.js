@@ -33,6 +33,11 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/2-3.vue')  //路径访问才加载组件
+  },
+  {
+      path:'/contactList',
+      name:'联系人列表',
+      component:()=> import('../views/ContactList.vue')
   }
 ]
 
